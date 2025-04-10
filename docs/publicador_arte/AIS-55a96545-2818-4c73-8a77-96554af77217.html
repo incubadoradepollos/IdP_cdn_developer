@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Informe IAS DVD</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card-header-custom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f8f9fa;
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid rgba(0,0,0,.125);
+        }
+        .logo {
+            height: 40px;
+            width: auto;
+        }
+        .card-footer {
+            background-color: #f1f1f1;
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="bg-primary text-white py-4 mb-4 rounded shadow">
+        <div class="container text-center">
+            <h1 class="display-5">Informe IAS DVD</h1>
+        </div>
+    </header>
+    <div class="container mt-4">
+
+        <div class="row">
+            <!-- Primera columna con texto -->
+            <div class="col-md-8">
+                <h4>promtp Identificacion</h4>
+                <p>Dame el nombre, el año de la pelicula, el director, el precio si tiene la etiqueta y el formato del producto.</p>
+                <h4>promtp Clasificacion</h4>
+                <p>Identifica el producto con la descripcion que te paso dame un json con los campos Nombre, Año en formato string, Formato, Descripcion de 255 caracteres en formato colocial, Precio en decimal y sin simbolo de moneda si no sabemos precio son 5 y tags que se describen a continuacion: 
+                    Los tags se rellenan con el director de la pelicula, el reparto principal, el formato del producto, el año del estreno                                                     </p>
+            </div>
+            
+            <!-- Segunda columna con card -->
+            <div class="col-md-4">
+                
+                <div class="card mb-4">
+                    <div class="card-header-custom">
+                        <h5 class="mb-0">gpt-4o + gpt-3.5-turbo</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <span class="text-muted">Precio total:</span>
+                            <strong>0.006528500000000001 €</strong>
+                        </div>
+                        <div class="d-flex justify-content-between mt-2">
+                            <span class="text-muted">Total tokens:</span>
+                            <strong>2621 Tokens</strong>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card mb-4">
+                    <div class="card-header-custom">
+                        <h5 class="mb-0">gemini-2.0-flash-lite + gemini-2.0-flash-lite</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <span class="text-muted">Precio total:</span>
+                            <strong>0.000384825 €</strong>
+                        </div>
+                        <div class="d-flex justify-content-between mt-2">
+                            <span class="text-muted">Total tokens:</span>
+                            <strong>3664 Tokens</strong>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card mb-4">
+                    <div class="card-header-custom">
+                        <h5 class="mb-0">qwen-vl-plus + qwen-vl-plus</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <span class="text-muted">Precio total:</span>
+                            <strong>0.00041579999999999997 €</strong>
+                        </div>
+                        <div class="d-flex justify-content-between mt-2">
+                            <span class="text-muted">Total tokens:</span>
+                            <strong>1464 Tokens</strong>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        
+        
+        
+            <div class="row mb-5">
+                <!-- Imagen izquierda -->
+                <div class="col-md-6 mb-4">
+                    
+                        <img src="https://incubadoradepollos.github.io/IdP_cdn_developer/publicador_arte/cccf574a-0cda-41f2-af65-6f541d4db11f.jpg" class="img-fluid rounded shadow" alt="Imagen del elemento"/>
+                    
+                </div>
+                <!-- Tarjetas de modelos -->
+                <div class="col-md-6">
+                                            
+                        <!-- {'nombre': 'ERROR EN AI', 'exception': JSONDecodeError('Expecting value: line 1 column 1 (char 0)')} -->
+                        <div class="card mb-4 shadow">
+                            <div class="card-header-custom">
+                                <h5 class="mb-0">qwen-vl-plus + qwen-vl-plus</h5>
+                                
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                                            
+                        <!-- {'response_ai': {'Nombre': 'Los Secretos: Gracias por Elegirme', 'Año': '2008', 'Formato': 'DVD', 'Descripcion': 'Revive el emocionante concierto de Los Secretos en Las Ventas de octubre de 2008, una experiencia única llena de música y energía. Disfruta de grandes éxitos interpretados por una de las bandas más emblemáticas de España. ¡No te lo pierdas!', 'Precio': 0, 'Tags': ['Los Secretos', 'Formato DVD', '2008']}} -->
+                        <div class="card mb-4 shadow">
+                            <div class="card-header-custom">
+                                <h5 class="mb-0">gpt-4o + gpt-3.5-turbo</h5>
+                                
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    
+                                        <li class="list-group-item">
+                                            
+                                            
+                                                <!-- Valor normal -->
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>Nombre:</strong>
+                                                    <span>Los Secretos: Gracias por Elegirme</span>
+                                                </div>
+                                            
+                                        </li>
+                                    
+                                        <li class="list-group-item">
+                                            
+                                            
+                                                <!-- Valor normal -->
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>Año:</strong>
+                                                    <span>2008</span>
+                                                </div>
+                                            
+                                        </li>
+                                    
+                                        <li class="list-group-item">
+                                            
+                                            
+                                                <!-- Valor normal -->
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>Formato:</strong>
+                                                    <span>DVD</span>
+                                                </div>
+                                            
+                                        </li>
+                                    
+                                        <li class="list-group-item">
+                                            
+                                            
+                                                <!-- Valor normal -->
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>Descripcion:</strong>
+                                                    <span>Revive el emocionante concierto de Los Secretos en Las Ventas de octubre de 2008, una experiencia única llena de música y energía. Disfruta de grandes éxitos interpretados por una de las bandas más emblemáticas de España. ¡No te lo pierdas!</span>
+                                                </div>
+                                            
+                                        </li>
+                                    
+                                        <li class="list-group-item">
+                                            
+                                            
+                                                <!-- Valor normal -->
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>Precio:</strong>
+                                                    <span>0</span>
+                                                </div>
+                                            
+                                        </li>
+                                    
+                                        <li class="list-group-item">
+                                            
+                                            
+                                                
+                                                    <!-- Lista de strings → tags -->
+                                                    <strong>Tags:</strong>
+                                                    <div class="mt-2">
+                                                        
+                                                            <span class="badge bg-secondary me-1">Los Secretos</span>
+                                                        
+                                                            <span class="badge bg-secondary me-1">Formato DVD</span>
+                                                        
+                                                            <span class="badge bg-secondary me-1">2008</span>
+                                                        
+                                                    </div>
+                                                
+                                            
+                                        </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                                            
+                        <!-- {'response_ai': {'Nombre': 'LOS SECRETOS - GRACIAS POR ELEGIRME (Concierto)', 'Año': '2008', 'Formato': 'DVD', 'Descripcion': 'Revive la magia del concierto de Los Secretos en DVD. Una experiencia musical inolvidable que captura la energía y emoción de sus mejores éxitos. ¡Un imprescindible para los amantes del rock en español!', 'Precio': 5.0, 'Tags': ['Los Secretos', 'Los Secretos', 'DVD', '2008']}} -->
+                        <div class="card mb-4 shadow">
+                            <div class="card-header-custom">
+                                <h5 class="mb-0">gemini-2.0-flash-lite + gemini-2.0-flash-lite</h5>
+                                
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    
+                                        <li class="list-group-item">
+                                            
+                                            
+                                                <!-- Valor normal -->
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>Nombre:</strong>
+                                                    <span>LOS SECRETOS - GRACIAS POR ELEGIRME (Concierto)</span>
+                                                </div>
+                                            
+                                        </li>
+                                    
+                                        <li class="list-group-item">
+                                            
+                                            
+                                                <!-- Valor normal -->
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>Año:</strong>
+                                                    <span>2008</span>
+                                                </div>
+                                            
+                                        </li>
+                                    
+                                        <li class="list-group-item">
+                                            
+                                            
+                                                <!-- Valor normal -->
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>Formato:</strong>
+                                                    <span>DVD</span>
+                                                </div>
+                                            
+                                        </li>
+                                    
+                                        <li class="list-group-item">
+                                            
+                                            
+                                                <!-- Valor normal -->
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>Descripcion:</strong>
+                                                    <span>Revive la magia del concierto de Los Secretos en DVD. Una experiencia musical inolvidable que captura la energía y emoción de sus mejores éxitos. ¡Un imprescindible para los amantes del rock en español!</span>
+                                                </div>
+                                            
+                                        </li>
+                                    
+                                        <li class="list-group-item">
+                                            
+                                            
+                                                <!-- Valor normal -->
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>Precio:</strong>
+                                                    <span>5.0</span>
+                                                </div>
+                                            
+                                        </li>
+                                    
+                                        <li class="list-group-item">
+                                            
+                                            
+                                                
+                                                    <!-- Lista de strings → tags -->
+                                                    <strong>Tags:</strong>
+                                                    <div class="mt-2">
+                                                        
+                                                            <span class="badge bg-secondary me-1">Los Secretos</span>
+                                                        
+                                                            <span class="badge bg-secondary me-1">Los Secretos</span>
+                                                        
+                                                            <span class="badge bg-secondary me-1">DVD</span>
+                                                        
+                                                            <span class="badge bg-secondary me-1">2008</span>
+                                                        
+                                                    </div>
+                                                
+                                            
+                                        </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+        
+        
+            <div class="row mb-5">
+                <!-- Imagen izquierda -->
+                <div class="col-md-6 mb-4">
+                    
+                        <img src="https://incubadoradepollos.github.io/IdP_cdn_developer/publicador_arte/f9fd33a2-4ef9-48b8-b24a-c1d3a55a1ff1.jpg" class="img-fluid rounded shadow" alt="Imagen del elemento"/>
+                    
+                </div>
+                <!-- Tarjetas de modelos -->
+                <div class="col-md-6">
+                                            
+                        <!-- {'response_ai': {'Nombre': 'La pasión de Juana de Arco', 'Año': '', 'Formato': 'DVD', 'Descripcion': 'Un clásico del cine, dirigido por Carl Theodor Dreyer y protagonizado por Renée Falconetti, Antonin Artaud y Eugène Silvain. Con una dirección de fotografía excepcional de Rudolph Maté.', 'Precio': 12.0, 'Tags': ['Carl Theodor Dreyer', 'Renée Falconetti', 'Antonin Artaud', 'Eugène Silvain', 'Rudolph Maté', 'Clásico del Cine']}} -->
+                        <div class="card mb-4 shadow">
+                            <div class="card-header-custom">
+                                <h5 class="mb-0">qwen-vl-plus + qwen-vl-plus</h5>
+                                
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    
+                                        <li class="list-group-item">
+                                            
+                                            
+                                                <!-- Valor normal -->
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>Nombre:</strong>
+                                                    <span>La pasión de Juana de Arco</span>
+                                                </div>
+                                            
+                                        </li>
+                                    
+                                        <li class="list-group-item">
+                                            
+                                            
+                                                <!-- Valor normal -->
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>Año:</strong>
+                                                    <span></span>
+                                                </div>
+                                            
+                                        </li>
+                                    
+                                        <li class="list-group-item">
+                                            
+                                            
+                                                <!-- Valor normal -->
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>Formato:</strong>
+                                                    <span>DVD</span>
+                                                </div>
+                                            
+                                        </li>
+                                    
+                                        <li class="list-group-item">
+                                            
+                                            
+                                                <!-- Valor normal -->
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>Descripcion:</strong>
+                                                    <span>Un clásico del cine, dirigido por Carl Theodor Dreyer y protagonizado por Renée Falconetti, Antonin Artaud y Eugène Silvain. Con una dirección de fotografía excepcional de Rudolph Maté.</span>
+                                                </div>
+                                            
+                                        </li>
+                                    
+                                        <li class="list-group-item">
+                                            
+                                            
+                                                <!-- Valor normal -->
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>Precio:</strong>
+                                                    <span>12.0</span>
+                                                </div>
+                                            
+                                        </li>
+                                    
+                                        <li class="list-group-item">
+                                            
+                                            
+                                                
+                                                    <!-- Lista de strings → tags -->
+                                                    <strong>Tags:</strong>
+                                                    <div class="mt-2">
+                                                        
+                                                            <span class="badge bg-secondary me-1">Carl Theodor Dreyer</span>
+                                                        
+                                                            <span class="badge bg-secondary me-1">Renée Falconetti</span>
+                                                        
+                                                            <span class="badge bg-secondary me-1">Antonin Artaud</span>
+                                                        
+                                                            <span class="badge bg-secondary me-1">Eugène Silvain</span>
+                                                        
+                                                            <span class="badge bg-secondary me-1">Rudolph Maté</span>
+                                                        
+                                                            <span class="badge bg-secondary me-1">Clásico del Cine</span>
+                                                        
+                                                    </div>
+                                                
+                                            
+                                        </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                                            
+                        <!-- {'response_ai': {'Nombre': 'La Pasion de Juana de Arco', 'Año': '1928', 'Formato': 'DVD', 'Descripcion': 'Revive la icónica interpretación de Juana de Arco en esta obra maestra del cine dirigida por Carl Theodor Dreyer. Sumérgete en la intensidad de cada escena capturada por el director de fotografía Rudolph Maté. Una experiencia cinematográfica única que no puedes perderte.', 'Precio': 12.0, 'Tags': ['Carl Theodor Dreyer', 'Maria Falconetti', 'DVD', '1928']}} -->
+                        <div class="card mb-4 shadow">
+                            <div class="card-header-custom">
+                                <h5 class="mb-0">gpt-4o + gpt-3.5-turbo</h5>
+                                
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    
+                                        <li class="list-group-item">
+                                            
+                                            
+                                                <!-- Valor normal -->
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>Nombre:</strong>
+                                                    <span>La Pasion de Juana de Arco</span>
+                                                </div>
+                                            
+                                        </li>
+                                    
+                                        <li class="list-group-item">
+                                            
+                                            
+                                                <!-- Valor normal -->
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>Año:</strong>
+                                                    <span>1928</span>
+                                                </div>
+                                            
+                                        </li>
+                                    
+                                        <li class="list-group-item">
+                                            
+                                            
+                                                <!-- Valor normal -->
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>Formato:</strong>
+                                                    <span>DVD</span>
+                                                </div>
+                                            
+                                        </li>
+                                    
+                                        <li class="list-group-item">
+                                            
+                                            
+                                                <!-- Valor normal -->
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>Descripcion:</strong>
+                                                    <span>Revive la icónica interpretación de Juana de Arco en esta obra maestra del cine dirigida por Carl Theodor Dreyer. Sumérgete en la intensidad de cada escena capturada por el director de fotografía Rudolph Maté. Una experiencia cinematográfica única que no puedes perderte.</span>
+                                                </div>
+                                            
+                                        </li>
+                                    
+                                        <li class="list-group-item">
+                                            
+                                            
+                                                <!-- Valor normal -->
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>Precio:</strong>
+                                                    <span>12.0</span>
+                                                </div>
+                                            
+                                        </li>
+                                    
+                                        <li class="list-group-item">
+                                            
+                                            
+                                                
+                                                    <!-- Lista de strings → tags -->
+                                                    <strong>Tags:</strong>
+                                                    <div class="mt-2">
+                                                        
+                                                            <span class="badge bg-secondary me-1">Carl Theodor Dreyer</span>
+                                                        
+                                                            <span class="badge bg-secondary me-1">Maria Falconetti</span>
+                                                        
+                                                            <span class="badge bg-secondary me-1">DVD</span>
+                                                        
+                                                            <span class="badge bg-secondary me-1">1928</span>
+                                                        
+                                                    </div>
+                                                
+                                            
+                                        </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                                            
+                        <!-- {'response_ai': {'Nombre': 'La Pasión de Juana de Arco', 'Año': '1928', 'Formato': 'DVD', 'Descripcion': 'Sumérgete en la desgarradora historia de Juana de Arco con esta edición especial en DVD.  Una obra maestra del cine mudo, con una cinematografía impresionante y actuaciones inolvidables.  ¡Un clásico imprescindible para tu colección!', 'Precio': 12.0, 'Tags': ['Carl Theodor Dreyer', 'Renée Falconetti, Antonin Artaud, Eugène Silvain', 'DVD', '1928']}} -->
+                        <div class="card mb-4 shadow">
+                            <div class="card-header-custom">
+                                <h5 class="mb-0">gemini-2.0-flash-lite + gemini-2.0-flash-lite</h5>
+                                
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    
+                                        <li class="list-group-item">
+                                            
+                                            
+                                                <!-- Valor normal -->
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>Nombre:</strong>
+                                                    <span>La Pasión de Juana de Arco</span>
+                                                </div>
+                                            
+                                        </li>
+                                    
+                                        <li class="list-group-item">
+                                            
+                                            
+                                                <!-- Valor normal -->
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>Año:</strong>
+                                                    <span>1928</span>
+                                                </div>
+                                            
+                                        </li>
+                                    
+                                        <li class="list-group-item">
+                                            
+                                            
+                                                <!-- Valor normal -->
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>Formato:</strong>
+                                                    <span>DVD</span>
+                                                </div>
+                                            
+                                        </li>
+                                    
+                                        <li class="list-group-item">
+                                            
+                                            
+                                                <!-- Valor normal -->
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>Descripcion:</strong>
+                                                    <span>Sumérgete en la desgarradora historia de Juana de Arco con esta edición especial en DVD.  Una obra maestra del cine mudo, con una cinematografía impresionante y actuaciones inolvidables.  ¡Un clásico imprescindible para tu colección!</span>
+                                                </div>
+                                            
+                                        </li>
+                                    
+                                        <li class="list-group-item">
+                                            
+                                            
+                                                <!-- Valor normal -->
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>Precio:</strong>
+                                                    <span>12.0</span>
+                                                </div>
+                                            
+                                        </li>
+                                    
+                                        <li class="list-group-item">
+                                            
+                                            
+                                                
+                                                    <!-- Lista de strings → tags -->
+                                                    <strong>Tags:</strong>
+                                                    <div class="mt-2">
+                                                        
+                                                            <span class="badge bg-secondary me-1">Carl Theodor Dreyer</span>
+                                                        
+                                                            <span class="badge bg-secondary me-1">Renée Falconetti, Antonin Artaud, Eugène Silvain</span>
+                                                        
+                                                            <span class="badge bg-secondary me-1">DVD</span>
+                                                        
+                                                            <span class="badge bg-secondary me-1">1928</span>
+                                                        
+                                                    </div>
+                                                
+                                            
+                                        </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+        
+    </div>
+
+    
+</body>
+</html>
